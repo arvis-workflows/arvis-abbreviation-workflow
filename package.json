@@ -1,0 +1,41 @@
+{
+  "name": "arvis-abbreviation-workflow",
+  "version": "0.0.1",
+  "description": "arvis workflow to query word abbreviation from abbreviations.com",
+  "license": "MIT",
+  "author": {
+    "name": "MinionsDave",
+    "email": "wudengguang@gmail.com",
+    "url": "https://github.com/MinionsDave"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "arvis-workflow",
+    "arvish",
+    "abbreviation",
+    "abbreviations"
+  ],
+  "dependencies": {
+    "arvish": ">=0.6.1",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}

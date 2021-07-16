@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "creator": "MinionsDave",
+  "description": "Arvis workflow to query word abbreviation from abbreviations.com",
+  "name": "arvis-abbreviation-workflow",
+  "readme": "https://github.com/arvis-workflows/arvis-abbreviation-workflow",
+  "version": "0.0.1",
+  "webAddress": "https://github.com/arvis-workflows/arvis-abbreviation-workflow#readme",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "title": "query from abbreviations.com",
+      "command": "ab",
+      "scriptFilter": "node index.js {query}",
+      "runningSubtext": "Hold on a sec until script work is done...",
+      "argType": "optional",
+      "withspace": true,
+      "actions": [
+        {
+          "type": "clipboard",
+          "modifiers": "normal",
+          "text": "{query}"
+        }
+      ]
+    }
+  ]
+}
